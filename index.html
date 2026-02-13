@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Happy Valentine's Day!</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="page">
+			<header class="hero">
+				<h1 id="title">For Monica</h1>
+				<p id="subtitle">Click the hearts!</p>
+			</header>
+
+			<section class="card">
+				<div class="left">
+					<!-- Replace the `src` value below with a real image path of Monica -->
+					<img id="portrait" src="3.jpeg" alt="Cuties" />
+					<p class="caption">We are very close to 1,5 years together and i wouldn't have it any other way. Thank you for always being there for me and staying by my side. I know the distance is hard for the both
+                        of us but im so happy we are doing it together. I love you!
+                    </p>
+				</div>
+
+				<div class="right">
+					<div class="controls">
+						<div class="score">Hearts: <span id="score">0</span>/<span id="target">10</span></div>
+						<div class="buttons">
+							<button id="startBtn">Start</button>
+							<button id="resetBtn">Reset</button>
+						</div>
+					</div>
+
+					<div id="gameArea" class="game-area" aria-live="polite">
+						<!-- Hearts will appear here -->
+						<div class="instructions">Click the hearts to collect them and unlock a message.</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="reveal" class="reveal hidden" role="dialog" aria-modal="true">
+				<div class="reveal-inner">
+					<button id="closeReveal" class="close">✕</button>
+					<h2 id="revealTitle">Good job baby!</h2>
+					<p id="revealMessage">Mwuahahaha have a good day at work and talk soon!!! I miss you :(</p>
+					<!-- Optional reveal image placeholder -->
+					<img id="revealImage" src="2.jpeg" alt="HEWHEHEHEH" />
+					<div class="replay">
+						<button id="playAgain">Play again</button>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<small></small>
+			</footer>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
+</html>
